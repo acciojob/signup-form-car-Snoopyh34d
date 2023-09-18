@@ -1,16 +1,42 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <form action=""method="post">
 
+        <label for="name">Name</label>
+        <input type="text" placeholder="Name" id="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" placeholder="Email" id="email" required>
+        
+        <label for="gender_m">Male</label>
+        <input type="Radio" name="gender" id="gender_m, required">
+
+        <label for="gender_f">Female</label>
+        <input type="Radio" name="gender" id="gender_f," required>
+        
+        <label for="name">Car Brands</label>
+        <input type="select" required placeholder="--Please choose an option--" id="cars">
+        
+        <label for="date">DOB</label>
+        <input type="date" required placeholder="" id="DOB">
+        
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password" required>
+        
+        <label for="tel">Phone Number</label>
+        <input type="tel" placeholder="XXX-XXX-XXXX" id="tel">
+        
+        <label for="tos">I agree to the TOS</label >
+        <input type="checkbox" placeholder="" id="tos" required>
+        
+
+        <input type="submit"value="Submit">
+    </form>
 </body>
-
 </html>
