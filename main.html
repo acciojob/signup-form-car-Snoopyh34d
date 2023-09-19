@@ -6,37 +6,62 @@
     <title>Document</title>
 </head>
 <body>
-    <form action=""method="post">
+    <form action="" method="post">
 
         <label for="name">Name</label>
-        <input type="text" placeholder="Name" id="name" required>
+        <input type="text" name="F_name" id="name" placeholder="Name" required>
+        <br>
 
         <label for="email">Email</label>
-        <input type="email" placeholder="Email" id="email" required>
-        
-        <label for="gender_m">Male</label>
-        <input type="Radio" name="gender" id="gender_m, required">
+        <input type="email" name="Email" id="email" placeholder="Email" required>
+        <br>
 
-        <label for="gender_f">Female</label>
-        <input type="Radio" name="gender" id="gender_f," required>
+        Gender
+        <input type="radio" name="Gender" id="gender_m" required>Male
+        <input type="radio" name="Gender" id="gender_f" required>Female
+        <br>
+
+
+        <label for="car">Car Brands</label>
+        <select name="brand" id="cars"  required>
+            <option value="" disabled selected>--Please choose an option--</option>
+            <option value="aston martin">Aston Martin</option>
+            <option value="bmw">BMW</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </select>
+        <br>
+
+        <label for="age">Age</label>
+        <input type="number" name="Age" id="age" placeholder="Age" required>
+        <br>
+
         
-        <label for="name">Car Brands</label>
-        <input type="select" required placeholder="--Please choose an option--" id="cars">
+        <label for="dob">Name</label>
+        <input type="date" name="DOB" id="dob" placeholder="" required>
+        <br>
+
         
-        <label for="date">DOB</label>
-        <input type="date" required placeholder="" id="DOB">
+        <label for="tel">Name</label>
+        <input type="tel" name="phone" id="tel" placeholder="XXX-XXX-XXXX" >
+        <br>
+
         
-        <label for="password">Password</label>
-        <input type="password" placeholder="Password" id="password" required>
-        
-        <label for="tel">Phone Number</label>
-        <input type="tel" placeholder="XXX-XXX-XXXX" id="tel">
-        
-        <label for="tos">I agree to the TOS</label >
-        <input type="checkbox" placeholder="" id="tos" required>
+        <label for="password">Name</label>
+        <input type="password" name="Password" id="password" placeholder="Password" required>
+        <br>
+
+        <input type="checkbox" name="Checkbox" id="tos" required>
+        <br>
+
+        <input type="button" value="Submit">
+        <br>
+
+
         
 
-        <input type="submit"value="Submit">
+
+
     </form>
 </body>
 </html>
